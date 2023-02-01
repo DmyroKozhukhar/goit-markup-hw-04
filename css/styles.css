@@ -89,6 +89,8 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--header-underline-color);
+}
+.page-header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -101,7 +103,9 @@ body {
   padding-top: 24px;
   padding-bottom: 28px;
 }
-
+.navi-link {
+  color: var(--main-text-color);
+}
 .logo-web {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -138,7 +142,7 @@ body {
 .navi-link:focus {
   color: var(--hover-focus-button-color);
 }
-.nav-menu-list .navi-link.current {
+.list-item .navi-link.current {
   color: var(--hover-focus-button-color);
 }
 
@@ -184,6 +188,9 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-text {
   color: var(--hero-text-color);
@@ -292,6 +299,11 @@ body {
   height: 40px;
   border-radius: 50px;
 }
+.sotial-link:hover,
+.sotial-link:focus {
+  background-color: #404bbf;
+}
+
 .h3-values {
   font-weight: 500;
   font-size: 20px;
@@ -316,6 +328,7 @@ body {
 .text-under-team-list {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: #fff;
 }
 .our-team-p {
   text-align: center;
@@ -327,6 +340,18 @@ body {
 .container.section.section-our-works {
   padding-top: 96px;
 }
+.port-link {
+  display: block;
+  text-decoration: none;
+}
+.port-link:visited {
+  color: var(--main-text-color);
+}
+.port-link:hover,
+.port-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .buttons-list {
   display: block;
   display: flex;
@@ -393,9 +418,6 @@ body {
 .our-works-list > .list-item {
   max-width: 360px;
 }
-.our-works-list > .list-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
 
 .p-worklist {
   color: var(--p-contact-color);
@@ -420,18 +442,24 @@ body {
   list-style-type: none;
   gap: 24px;
 }
+
 .customers-links {
   display: flex;
   width: 168px;
   height: 88px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #8e8f99;
+  border: 1px solid rgba(142, 143, 153, 1);
   border-radius: 4px;
+  fill: rgba(142, 143, 153, 1);
 }
 .customers-links:hover,
 .customers-links:focus {
   border: 1px solid #4d5ae5;
+  fill: #404bbf;
+}
+.test:hover {
+  fill: red;
 }
 /* FOOTER */
 .footer-menu {
@@ -468,6 +496,12 @@ body {
 }
 .sotial-link.footer {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.media-paragraph {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 .sotial-link.footer:hover,
 .sotial-link.footer:focus {
