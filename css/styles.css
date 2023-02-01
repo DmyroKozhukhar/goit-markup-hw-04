@@ -62,13 +62,6 @@ img {
   padding-bottom: 120px;
 }
 
-a.navi-link:visited {
-  color: #2e2f42;
-}
-
-.list-item {
-  list-style-type: none;
-}
 p {
   color: var(--p-contact-color);
 }
@@ -97,7 +90,9 @@ body {
 .navi-link,
 .contmail,
 .contnumb,
-.logo-link {
+.logo-link,
+.port-link,
+.logo-link-footer {
   text-decoration: none;
   display: block;
   padding-top: 24px;
@@ -136,16 +131,22 @@ body {
 .nav-menu-list .list-item + .list-item {
   margin-left: 40px;
 }
-.navi-link:hover {
-  color: var(--navi-link-hover-color);
-}
-.navi-link:focus {
+.list-item > .navi-link:hover,
+.list-item > .navi-link:focus {
   color: var(--hover-focus-button-color);
 }
+
 .list-item .navi-link.current {
   color: var(--hover-focus-button-color);
 }
 
+.navi-link:visited {
+  color: #2e2f42;
+}
+
+.list-item {
+  list-style-type: none;
+}
 /* ADDRESS */
 .address-menu {
   margin-left: auto;
@@ -241,6 +242,9 @@ body {
   margin-left: 24px;
 }
 /* DOING-SECTION */
+.doing-section {
+  padding-top: 0;
+}
 .title-studio {
   display: block;
 
@@ -342,7 +346,6 @@ body {
 }
 .port-link {
   display: block;
-  text-decoration: none;
 }
 .port-link:visited {
   color: var(--main-text-color);
@@ -482,7 +485,6 @@ body {
 .logo-link-footer {
   padding-top: 0;
   margin-bottom: 16px;
-  text-decoration: none;
   display: block;
 }
 .footer-link-header {
