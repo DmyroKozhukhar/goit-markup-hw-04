@@ -91,12 +91,15 @@ body {
 .contmail,
 .contnumb,
 .logo-link,
-.port-link,
 .logo-link-footer {
   text-decoration: none;
   display: block;
   padding-top: 24px;
   padding-bottom: 28px;
+}
+.port-link {
+  text-decoration: none;
+  display: block;
 }
 .navi-link {
   color: var(--main-text-color);
